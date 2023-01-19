@@ -1,0 +1,8 @@
+/node_modules
+/public
+/dist
+*.js
+*.json
+.env*
+.vscode
+README.md
