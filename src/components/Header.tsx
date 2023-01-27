@@ -1,18 +1,21 @@
 import styled from "styled-components"
 
-export const NavBar = () => {
+export const Header = () => {
   return (
-    <Wrapper>NavBar</Wrapper>
+    <Wrapper>Header</Wrapper>
   )
 }
 
-const Wrapper = styled.nav`
+const Wrapper = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
-  height: 80px;
-  border-radius: 25px 25px 0 0;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  left: 0;
   background-color: #071427;
   color: #fff;
   z-index: 10;

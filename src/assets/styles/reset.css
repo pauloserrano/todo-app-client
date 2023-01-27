@@ -47,6 +47,6 @@ strong {
 a {
   color: inherit;
 }
-body{
-	background-color: black;
+* {
+	box-sizing: border-box;
 }
