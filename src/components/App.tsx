@@ -21,7 +21,6 @@ export default function App() {
 const GlobalStyle = styled.div`
   display: flex;
   flex-direction: column;
-  width: 500px;
   min-height: 100vh;
   position: relative;
   background: #182843;

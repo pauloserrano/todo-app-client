@@ -10,6 +10,6 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  min-height: 150px;
   margin: 2rem 0;
 `

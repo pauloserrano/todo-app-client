@@ -28,7 +28,7 @@ const Wrapper = styled.main`
   overflow-y: auto;
 
   h1{
-    width: 75%;
+    width: calc(100% - 10vw);
     margin: 0 auto;
     font-weight: bold;
     font-size: 2rem;
@@ -40,6 +40,6 @@ const Wrapper = styled.main`
   h2{
     font-weight: bold;
     font-size: 1.5rem;
-    line-height: 1.5em;
+    margin-bottom: 0.75em;
   }
 `

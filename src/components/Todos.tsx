@@ -31,11 +31,13 @@ const Wrapper = styled.ul`
   li{
     display: flex;
     align-items: center;
+    width: 100%;
     min-height: 100px;
     margin: 0.5rem 0;
     padding: 0.75rem;
     border-radius: 25px;
     background-color: #465369;
+    overflow: hidden;
 
     button{
       min-width: 35px;
@@ -48,15 +50,26 @@ const Wrapper = styled.ul`
       cursor: pointer;
     }
 
-    h4{
-      font-size: 1rem;
-      font-weight: bold;
-      line-height: 1.2em;
-      margin-bottom: 0.5em;
-    }
+    div{
+      width: 100%;
 
-    p{
-      font-size: 0.75rem;
+      h4{
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 1.2em;
+        margin-bottom: 0.5em;
+      }
+  
+      p{
+        font-size: 0.75rem;
+      }
+
+      h4, p {
+        max-width: 80%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
     }
   }
 `
