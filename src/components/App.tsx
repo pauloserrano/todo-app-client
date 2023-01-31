@@ -1,18 +1,16 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { Home } from "../pages"
-import "../assets/styles/reset.css"
 import styled from "styled-components"
-import { Header, NavBar } from "../components"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { Home, TodoCreate } from "../pages"
+import "../assets/styles/reset.css"
 
 export default function App() {
   return (
     <GlobalStyle>
       <Router>
-        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/new" element={<TodoCreate />} />
         </Routes>
-        <NavBar />
       </Router>
     </GlobalStyle>
   )
